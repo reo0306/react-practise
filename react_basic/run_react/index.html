@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../../../../libs/react.development.js"></script> 
+  <script src="../../../../libs/react-dom.development.js"></script> 
+  <script src="../../../../libs/babel-standalone.js"></script> 
+</head>
+<body>
+   <!-- マウント先 -->
+   <div id="app"></div> 
+   <script type="text/babel">
+       const appEl = document.querySelector("#app");
+       // 以下、2行はreact18からの書き方
+       //ブラウザの DOM ノード内に React コンポーネントを表示するためのルートを作成
+       const root = ReactDOM.createRoot(appEl);
+       // <h1></h1>はjsxの構文
+       root.render(<h1>こんにちは</h1>);
+   </script>
+</body>
+</html>
