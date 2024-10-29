@@ -31,3 +31,5 @@ todoApi.patch({
     "editing": false,
     "completed": false
 });
+
+export default todoApi;
